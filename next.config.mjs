@@ -4,6 +4,12 @@ const nextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  compress: true,
+  poweredByHeader: false,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000,
+  },
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
